@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin:0;
+        padding: 0;
+        min-height: 100vh;
+
+      color: white;
+      background: url(background.jpg);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+
+    .container{
+        font-family: "poppins";
+      min-height: 294px;
+      width: 311px;
+      background: transparent;
+      border: 3px solid rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(10px);
+      border-radius: 50px;
+      
+    }
+    .container h1{
+      color:black;
+      text-align: center;
+    }
+
+    .username{
+      position: absolute;
+      outline: none;
+      background-color: transparent;
+      border:2px solid black;
+      border-radius: 5px;
+      font-size: medium;
+      left:40px;
+    }
+
+    .userlabel{
+      position: absolute;
+      color:black;
+      top:90px;
+      left: 45px;
+    }
+
+    .bxr{
+      position: absolute;
+      color:black;
+      font-size: 25px;
+      top:89px;
+      left: 245px;;
+    }
+
+    .username:focus ~.userlabel
+    {
+      animation: usernameanime 0.2s forwards;
+    }
+      
+
+    @keyframes usernameanime {
+      to{
+        top:79px;
+        font-size: 10px;
+      }
+      
+    }
+
+    .password{
+      position: absolute;
+      outline:none;
+      background-color: transparent;
+      font-size: medium;
+      border:2px solid black;
+      border-radius: 5px;
+      left:40px;
+    }
+
+    .passlabel{
+      position: absolute;
+      color:black;
+      top:140px;
+      left: 45px;
+    }
+
+    .bxp{
+      position: absolute;
+      color:black;
+      font-size: 25px;
+      left: 245px;
+      top:139px;
+    }
+
+    .password:focus ~.passlabel{
+      animation: passowrdanime 0.2s forwards;
+    }
+
+    @keyframes passowrdanime 
+    {
+      to{
+        top:125px;
+        font-size:10px;
+      }
+    }
+
+    .forget{
+      position: absolute;
+      color:purple;
+      text-shadow: 1px 1px black;
+      font-size: smaller;
+      top:170px;
+      left:121px;
+    }
+    .forget:hover{
+      color:white;
+    }
+
+    .login{
+      position: absolute;
+      padding: 5px 40px;
+      color: rgba(211, 211, 211, 0.737);
+      background-color: black;
+      border:none;
+      border-radius: 10px;
+      font-size: 20px;
+      left:80px;
+    }
+
+    .login:hover{
+      animation: loginanime 0.5s forwards;
+    }
+
+
+    @keyframes loginanime {
+      to{
+        background-color: gray;
+        color:black;
+      }
+
+  
+}
